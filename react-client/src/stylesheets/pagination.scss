@@ -1,0 +1,36 @@
+.pagination {
+  text-align: center;
+  &__button {
+    border: 0;
+    background: 0;
+    padding: .2em 1em;
+    margin: 0 .15em;
+    font-weight: 700;
+    font-size: 1.2em;
+    vertical-align: middle;
+    &:hover {
+      color: #c00;
+    }
+    &:disabled{
+      color: #ccc;
+    }
+    &.__page{
+      display: none;
+    }
+    &.active{
+      color: mediumvioletred;
+      display: initial;
+      border-bottom: 1px solid mediumvioletred;
+    }
+    &:focus, &:active {
+      outline: none;
+    }
+
+    @media (min-width: 50em) {
+      &.__page {
+        display: initial;
+      }
+    }
+  }
+
+}

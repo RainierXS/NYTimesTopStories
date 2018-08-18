@@ -1,0 +1,62 @@
+$image-width: 120px;
+
+.article {
+  min-height: 75px;
+  min-width: 30px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: .75em;
+  margin: .5em auto;
+  background-size: contain;
+  vertical-align: top;
+
+  &__content {
+
+    &__title {
+      font-size: 1.2em;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    &__byline {
+      font-size: .7em;
+      font-weight: 400;
+      margin-bottom: .5em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+    }
+
+    &__date {
+      font-size: 0.7em;
+      font-weight: 400;
+      margin-bottom: .5em;
+      text-align: right;
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    &__abstract{
+      font-size: .9em;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    &__link {
+      width: 100%;
+      font-size: .9em;
+      text-align: end;
+      a {
+        color: mediumvioletred;
+        font-weight: 700;
+        &:hover {
+          color: violet;
+        }
+        &:visited {
+          color: darkmagenta;
+        }
+      }
+    }
+  }
+}

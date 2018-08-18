@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px raleway, helvetica, arial, sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 90vw;
+  margin: 1em auto;
+  @media(min-width: 50em) {
+    width: calc(100vw - 364px);
+    margin: .5em 0em 1em 332px;
+  }
+}
+
+.row2 {
+  display: inline-block;
+  width: 50%;
+}

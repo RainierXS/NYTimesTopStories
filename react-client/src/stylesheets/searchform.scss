@@ -1,0 +1,49 @@
+.search_form {
+  background-color: #ccc;
+  border: 1px solid #999;
+  border-radius: .5em;
+  padding: .5em;
+  margin: .5em 0;
+  min-width: 300px;
+
+  @media (min-width: 50em){
+    position: fixed;
+    left: 1em;
+  }
+
+  &__label {
+    display: block;
+    width: 100%;
+    margin: auto;
+
+    span {
+      font-size: .8em;
+    }
+  }
+
+  &__input, &__select {
+    display: block;
+    margin: .25em auto .5em auto;
+    width: 99%;
+    height: 40px;
+    border: 0;
+    padding: .5em;
+    border-radius: .5em;
+  }
+
+}
+
+.fiji_toggle {
+  font-size: .8em;
+  .fiji_toggle__checkbox {
+    margin: .25em;
+    vertical-align: middle;
+    height: 1.2em;
+    width: 1.2em;
+  }
+}
+
+.article_count {
+  font-size: .8em;
+  text-align: end;
+}
